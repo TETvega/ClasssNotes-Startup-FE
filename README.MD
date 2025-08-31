@@ -1,17 +1,7 @@
 # 💡 ClassNotes Web Frontend
 [![React](https://img.shields.io/badge/React-Framework-blue)](https://reactjs.org/) 
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-Framework-%2338B2AC)](https://tailwindcss.com/)
-[![Node.js](https://img.shields.io/badge/Node.js-Runtime-green)](https://nodejs.org/)
-
----  
-## 📌 Índice  
-
-1. [📖 Descripción](#-descripción-del-repositorio)  
-2. [🚀 Tecnologías Utilizadas](#-tecnologías-utilizadas)
-3. [💻 Funcionalidades](#-funcionalidades)  
-4. [✅ Estado del Proyecto](#-estado-del-proyecto)  
-5. [⚙️ Instrucciones de instalación](#-instrucciones-paso-a-paso-para-configurar-y-ejecutar-el-proyecto-localmente)  
-6. [🧑🏻‍💻 Equipo de desarrollo](#-personas-contribuyentes) 
+[![Node.js](https://img.shields.io/badge/Node.js-Runtime-green)](https://nodejs.org/)  
 
 ---
 ## 📖 Descripción
@@ -67,6 +57,12 @@ npm install
 ```
 npm run dev
 ```
+
+---
+## 📄 Documentación
+Dar click en el siguiente enlace para ver la documentación disponible acerca del proyecto:
+
+[ClassNotes Web Frontend](./documentation/index.MD)
 
 ---
 ## 🧑🏻‍💻 Equipo de desarrollo
