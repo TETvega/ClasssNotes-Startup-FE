@@ -3,7 +3,7 @@ import { useTransition } from "react";
 import { useFormik } from "formik";
 import { usePasswordResetStore } from "../store/usePasswordResetStore";
 import { NewPasswordInitValues, NewPasswordValidationSchema } from "../forms/new_password_otp";
-import { updatePasswordWithOtp } from "../../../shared/actions/auth/forgot_password.actions";
+import { updatePasswordWithOtp } from "../../../shared/actions/auth.action";
 
 export const useNewPasswordForm = () => {
   const [isPendingOtpValidation, startTransition] = useTransition();

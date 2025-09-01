@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { sendForgotPasswordRequest, validateOtpCode } from "../../../shared/actions/auth/forgot_password.actions";
+import { sendForgotPasswordRequest, validateOtpCode } from "../../../shared/actions/auth.action";
 
 export const usePasswordResetStore = create((set) => ({
   email: "",

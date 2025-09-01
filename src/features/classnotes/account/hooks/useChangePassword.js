@@ -2,7 +2,7 @@ import toast from "react-hot-toast";
 import { useTransition } from "react";
 import { useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
-import { changePasswordAsync } from "../../../../shared/actions/account/account.action";
+import { changePasswordAsync } from "../../../../shared/actions/account.action";
 import { useUserInfo } from "../../../../shared/hooks/useUserInfo";
 
 export const useChangePassword = () => {

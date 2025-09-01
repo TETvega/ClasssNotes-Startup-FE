@@ -8,7 +8,6 @@
  */
 
 import { IoEllipsisVerticalSharp } from "react-icons/io5";
-import useClickOutside from "../hooks/useClickOutside";
 import ActionModal from "./modals/ActionModal";
 import { Transition } from "@headlessui/react";
 import {
@@ -18,6 +17,7 @@ import {
   shift,
   autoUpdate,
 } from "@floating-ui/react";
+import useClickOutside from "../hooks/useClickOutside";
 
 export const MoreActions = ({ actions = [], trigger = null }) => {
   // Custom Hook para detectar clics fuera del modal

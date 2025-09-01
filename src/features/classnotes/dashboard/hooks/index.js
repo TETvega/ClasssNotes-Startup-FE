@@ -1,1 +1,1 @@
-export * from './useChangePassword';
+export * from './useDashboardHome';

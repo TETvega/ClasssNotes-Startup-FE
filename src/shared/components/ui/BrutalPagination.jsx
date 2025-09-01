@@ -1,7 +1,7 @@
 import usePagination from "@mui/material/usePagination";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import BrutalButton from "./BrutalButton";
-import { generateId } from "../../utils/generateid";
+import { generateId } from "../../utils/generate-id";
 
 /**
  * Componente reutilizable de paginación con estilos brutales.

@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import { jwtDecode } from "jwt-decode";
-import { loginAsync, registerAsync } from "../../../shared/actions/auth/auth.action";
 import { setTokenAndState } from "../utilities/set_token_and_state";
+import { loginAsync, registerAsync } from "../../../shared/actions/auth.action";
 
 export const useAuthStore = create((set, get) => ({
   user: null,

@@ -1,4 +1,4 @@
-import { classNotesApi } from "../../../config/classNotesApi";
+import { classNotesApi } from "../../config/classNotesApi";
 
 // Endpoint para obtener todas las tags
 export const getTagsList = async () => {
