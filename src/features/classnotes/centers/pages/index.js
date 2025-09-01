@@ -1,1 +1,2 @@
-export * from './ChangePasswordPage'
+export * from "./CenterCoursesPage";
+export * from "./CentersPage";
