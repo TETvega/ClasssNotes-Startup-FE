@@ -13,6 +13,7 @@ import { MoreActions } from "../../../../shared/components";
 import { ActionCard, ActivityPreviewCard, CountingCard, SectionList, StudentCard } from "../components";
 import { StudentModal } from "../../students/components/modals";
 import ConfirmDeleteModal from "../../../../shared/components/modals/ConfirmDeleteModal";
+import { AddStudents, ImportFromExcel } from "../../students/components/ui";
 
 export const CoursesDashboardPage = () => {
   const { courseId } = useParams();
@@ -236,15 +237,14 @@ export const CoursesDashboardPage = () => {
         />
       </div>
 
-      {/* Modal para añadir estudiantes manualmente 
+      {/* Modal para añadir estudiantes manualmente */}
       <AddStudents isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
 
-      {/* Modal papra añadir estudiantes por excel 
+      {/* Modal papra añadir estudiantes por excel */}
       <ImportFromExcel
         isOpen={isImportModalOpen}
         onClose={() => setIsImportModalOpen(false)}
       />
-      */}
 
       {/* Modal para ver información del estudiante */}
       <StudentModal

@@ -3,7 +3,6 @@ import { Route, Routes, Navigate } from "react-router-dom";
 import { useBreadcrumbStore } from "../shared/store/useBreadcrumbStore";
 import { useAuthStore } from "../features/auth/store";
 import { useAttendanceStatusStore } from "../features/classnotes/attendances/store/useAttendanceStatusStore";
-import { useTagsListStore } from "../shared/store/useTagsListStore";
 import { NavBar } from "../shared/components/ui/NavBar";
 import { NavBarAuth } from "../features/auth/components/NavBarAuth";
 import { AuthRouter } from "../features/auth/routes/AuthRouter";
@@ -17,6 +16,7 @@ import { ActivitiesRouter } from "../features/classnotes/activities/routes/Activ
 import { AccountRouter } from "../features/classnotes/account/routes/AccountRouter";
 import { AttendancesRouter } from "../features/classnotes/attendances/routes/AttendancesRouter";
 import { NotFoundPage } from "../shared/pages/NotFoundPage";
+import { useTagsListStore } from "../features/classnotes/tags/store/useTagsListStore";
 
 export const ClassNotesRouter = () => {
   const { getCurrentCenter, getCurrentCourse, getCurrentActivity } = useBreadcrumbStore();

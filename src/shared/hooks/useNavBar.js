@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useQueryClient } from "@tanstack/react-query";
 import { useAuthStore } from "../../features/auth/store";
-import { useTagsListStore } from "../store/useTagsListStore";
+import { useTagsListStore } from "../../features/classnotes/tags/store/useTagsListStore";
 
 export const useNavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

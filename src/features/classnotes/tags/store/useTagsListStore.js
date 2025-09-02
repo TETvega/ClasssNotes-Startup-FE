@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import { getTagsList } from "../actions/tags.action";
+import { getTagsList } from "../../../../shared/actions";
 
 export const useTagsListStore = create((set, get) => ({
   tags: [],

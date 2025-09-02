@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDashboardHome } from "../hooks";
-import { useTagsListStore } from "../../../../shared/store/useTagsListStore";
 import { DashboardActivities, DashboardCenters, DashboardCourses, DashboardStudents, DashboardSummary } from "../components";
 import FormBrutalButton from "../../../../shared/components/ui/FormBrutalButton";
 import { TabTitle } from "../../../../shared/components";
 import { titleTabs } from "../../../../shared/constants";
+import { useTagsListStore } from "../../tags/store/useTagsListStore";
 
 export const DashboardPage = () => {
   const { isLoading, total } = useDashboardHome();
