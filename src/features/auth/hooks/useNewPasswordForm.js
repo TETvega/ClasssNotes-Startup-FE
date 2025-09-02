@@ -2,8 +2,8 @@ import toast from "react-hot-toast";
 import { useTransition } from "react";
 import { useFormik } from "formik";
 import { usePasswordResetStore } from "../store/usePasswordResetStore";
-import { NewPasswordInitValues, NewPasswordValidationSchema } from "../forms/new_password_otp";
 import { updatePasswordWithOtp } from "../../../shared/actions/auth.action";
+import { NewPasswordInitValues, NewPasswordValidationSchema } from "../forms";
 
 export const useNewPasswordForm = () => {
   const [isPendingOtpValidation, startTransition] = useTransition();

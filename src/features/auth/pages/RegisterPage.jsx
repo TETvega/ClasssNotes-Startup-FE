@@ -1,12 +1,12 @@
 import { useFormik } from "formik";
 import { isObjectEmpty } from "../../../shared/utils/is-object-empty";
 import { Link, useNavigate } from "react-router-dom";
-import { registerInitValues, registerValidationSchema } from "../forms/register_data";
 import { useEffect, useState, useTransition } from "react";
 import { useAuthStore } from "../store/useAuthStore";
 import FormBrutalButton from "../../../shared/components/ui/FormBrutalButton";
 import PasswordInput from "../../../shared/components/ui/PasswordInput";
 import toast from "react-hot-toast";
+import { registerInitValues, registerValidationSchema } from "../forms";
 
 export const RegisterPage = () => {
   const navigate = useNavigate();

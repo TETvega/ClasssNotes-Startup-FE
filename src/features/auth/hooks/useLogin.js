@@ -2,8 +2,8 @@ import { useTransition } from "react";
 import { useFormik } from "formik";
 import toast from "react-hot-toast";
 import { useAuthStore } from "../store";
-import { loginInitValues, loginValidationSchema } from "../forms/login_data";
 import { useNavigate } from "react-router-dom";
+import { loginInitValues, loginValidationSchema } from "../forms";
 
 export const useLogin = () => {
   const navigate = useNavigate();
