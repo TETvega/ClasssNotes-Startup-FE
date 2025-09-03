@@ -1,1 +1,3 @@
-export * from './ChangePasswordPage'
+export * from "./TakeAttendencePage";
+export * from "./StudentsAttendancePage";
+export * from "./HistoryAttendencePage";

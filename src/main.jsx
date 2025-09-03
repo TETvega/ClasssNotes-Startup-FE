@@ -7,7 +7,7 @@ import { ClassNotesRouter } from "./routes/ClassNotesRouter.jsx";
 import { TailwindIndicator } from "./shared/components/others/TailwindIndicator.jsx";
 import { ScrollToTop } from "./shared/components/ScrollToTop.jsx";
 import { TabTitle } from "./shared/components/TabTitle.jsx";
-import { appName } from "./shared/constants/appName.js";
+import { appName } from "./shared/constants/app-name.js";
 import 'react-tooltip/dist/react-tooltip.css'
 import "./index.css";
 

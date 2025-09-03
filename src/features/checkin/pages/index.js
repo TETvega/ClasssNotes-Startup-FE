@@ -1,1 +1,3 @@
-export * from './ChangePasswordPage'
+export * from "./CheckInByEmailPage";
+export * from "./CheckInByQRCodePage";
+export * from "./CheckInSuccesPage";

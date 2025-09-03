@@ -141,7 +141,7 @@ export const CoursesDashboardPage = () => {
 
               onClick:
                 inProgress || !isAttendanceTaken
-                  ? `/attendance/${courseId}/now`
+                  ? `/attendances/${courseId}/now`
                   : undefined,
 
               isDisabled:
@@ -156,7 +156,7 @@ export const CoursesDashboardPage = () => {
             {
               label: "Ver historial",
               className: "bg-action-primary",
-              onClick: `/attendance/${courseId}/history`,
+              onClick: `/attendances/${courseId}/history`,
               isDisabled: dashboardData.students.length === 0,
               title:
                 dashboardData.students.length === 0

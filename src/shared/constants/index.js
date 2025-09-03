@@ -1,2 +1,2 @@
-export * from "./appName";
-export * from "./titleTabs";
+export * from "./app-name";
+export * from "./title-tabs";

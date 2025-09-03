@@ -1,4 +1,4 @@
-import { appName } from "./appName";
+import { appName } from "./app-name";
 
 const formatTitle = (title) => {
   return `${title} | ${appName}`;

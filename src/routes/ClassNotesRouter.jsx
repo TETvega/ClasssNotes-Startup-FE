@@ -7,7 +7,6 @@ import { NavBar } from "../shared/components/ui/NavBar";
 import { NavBarAuth } from "../features/auth/components/NavBarAuth";
 import { AuthRouter } from "../features/auth/routes/AuthRouter";
 import { LandingPage } from "../shared/pages/LandingPage";
-import { CheckInRouter } from "../features/checkin/routes/CheckInRouter";
 import { ProtectedLayout } from "../shared/components/ProtectedLayout";
 import { DashboardRouter } from "../features/classnotes/dashboard/routes/DashboardRouter";
 import { CentersRouter } from "../features/classnotes/centers/routes/CentersRouter";
@@ -17,6 +16,7 @@ import { AccountRouter } from "../features/classnotes/account/routes/AccountRout
 import { AttendancesRouter } from "../features/classnotes/attendances/routes/AttendancesRouter";
 import { NotFoundPage } from "../shared/pages/NotFoundPage";
 import { useTagsListStore } from "../features/classnotes/tags/store/useTagsListStore";
+import { CheckInRouter } from "../features/checkIn/routes";
 
 export const ClassNotesRouter = () => {
   const { getCurrentCenter, getCurrentCourse, getCurrentActivity } = useBreadcrumbStore();
@@ -46,7 +46,9 @@ export const ClassNotesRouter = () => {
             {/* Rutas públicas */}
             <Route path="/auth/*" element={<AuthRouter />} />
             <Route path="/" element={<LandingPage />} />
-            <Route path="/check-in/*" element={<CheckInRouter />} />
+
+            {/* Ruta para marcar asistencia */}
+            <Route path="/check-in/*" element={<CheckInRouter />} /> 
 
             {/* Rutas protegidas */}
             <Route element={<ProtectedLayout />}>
